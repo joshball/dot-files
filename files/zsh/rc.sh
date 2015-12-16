@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. $DOTFILES_HOME/zsh/aliases # shell aliases
+. $DOTFILES_HOME/zsh/aliases.sh # shell aliases
 #. ~/.dot-files/zsh/git # shell aliases
 
 
