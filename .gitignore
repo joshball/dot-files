@@ -30,3 +30,5 @@ node_modules
 bin/
 unix/.vim/bundle/*
 !unix/.vimrc
+
+tmp-examples/
