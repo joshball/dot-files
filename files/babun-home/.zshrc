@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 
-file="/c/Users/joshua/.dot-files/files/windows/.zshrc"
+export WINDOWS_HOME="/c/Users/joshua"
+export DOTFILES_HOME="/c/Users/joshua/.dot-files/files"
+
+file=$DOTFILES_HOME/windows/.zshrc"
 
 if [ -f "$file" ]
 then
