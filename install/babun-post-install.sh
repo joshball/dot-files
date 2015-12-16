@@ -50,4 +50,4 @@ fancy_echo "Updating babun HOME ~/.zshrc"
 
 # echo "execute 'chere -i -t mintty' in admin mode to enable Zsh Prompt Here"
 
-# source ~/.zshrc
+source ~/.zshrc
