@@ -83,7 +83,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. ./aliases # shell aliases
+. $DOTFILES_HOME/zsh/aliases # shell aliases
 #. ~/.dot-files/zsh/git # shell aliases
 
 
