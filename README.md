@@ -1,10 +1,23 @@
-To use on Ubuntu 
-run [./scripts/ubuntu.sh](scripts/ubuntu.sh)
+# joshball/dot-files
 
-To install vim configurations on windows 
-run [scripts/vim.cmd](scripts/vim.cmd) using `Run As Administrator`
 
-To install a cygwin environment with Windows, 
-first install [Babun](https://github.com/babun/babun), 
-then run [scripts/choco.cmd](scripts/choco.cmd) using `Run As Administrator`, 
-then run [scripts/babun.sh](scripts/babun.sh) from inside babun
+## Windows
+
+First, update your dot-files in %USERPROFILE%. The following script will either check it out if it does not exist,
+or issue a git pull on it if it does.
+
+	curl -k https://raw.githubusercontent.com/joshball/dot-files/master/install/install-update-dotfiles.cmd
+	
+If you are already in a shell, you could use this:	
+	
+	curl -k https://raw.githubusercontent.com/joshball/dot-files/master/install/install-update-dotfiles.sh | bash
+
+
+### Babun
+
+If you want to link babun to this, open your babun shell and enter:
+
+	curl -k https://raw.githubusercontent.com/joshball/dot-files/master/install/babun-post-install.sh | zsh
+
+
+
