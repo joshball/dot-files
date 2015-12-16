@@ -54,7 +54,8 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$DOTFILES_HOME/bin:$PATH
+# export PATH=$DOTFILES_HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,17 +85,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+. $DOTFILES_HOME/zsh/prompt.sh # prompt config
+. $DOTFILES_HOME/zsh/options.sh # zsh options
+. $DOTFILES_HOME/zsh/completion.sh # tab completion config
 . $DOTFILES_HOME/zsh/aliases.sh # shell aliases
-#. ~/.dot-files/zsh/git # shell aliases
-
-
-# ORIGINAL DOTFILES RC
-# . ~/.zsh/prompt # prompt config
-# . ~/.zsh/options # zsh options
-# . ~/.zsh/completion # tab completion config
-# . ~/.zsh/aliases # shell aliases
-# . ~/.zsh/git # git aliases
-# . ~/.zsh/ruby # ruby env vars and version management
+. $DOTFILES_HOME/zsh/git.sh # git aliases
+# . $DOTFILES_HOME/zsh/ruby # ruby env vars and version management
 # 
 # # Env vars
 # if [ $(uname -s) = 'Darwin' ]; then

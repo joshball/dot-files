@@ -27,8 +27,11 @@ build/Release
 node_modules
 
 # shell script stuff
-bin/
+# bin/
 unix/.vim/bundle/*
 !unix/.vimrc
 
 tmp-examples/
+
+.idea/
+.vscode/
