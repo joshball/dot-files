@@ -1,0 +1,66 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    // COMMENTS
+    {
+        "name": "Add Line Comment",
+        "why": "vs,resharper",
+        "key": "ctrl+k ctrl+c",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "name": "Remove Line Comment",
+        "why": "vs,resharper",
+        "key": "ctrl+k ctrl+u",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "name": "Toggle Line Comment",
+        "why": "vscode,atom",
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // FORMATTING:
+    {
+        "key": "ctrl+k ctrl+f",
+        "name": "Format Selection",
+        "why": "vscode,vs,resharper",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && editorHasDocumentFormattingProvider && editorHasSelection && !editorReadonly"
+    },
+    {
+        "name": "Format Document",
+        "why": "vscode,vs,resharper",
+        "key": "ctrl+k ctrl+d",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // DELETE AND COPY LINES 
+    {
+        "name": "Duplicate Lines (down)",
+        "why": "",
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "name": "Delete Line",
+        "why": "",
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {
+        "name": "Toggle Word Wrap",
+        "why": "",
+        "key": "alt+z",
+        "command": "editor.action.toggleWordWrap",
+        "when": "editorTextFocus"
+    }
+
+]
