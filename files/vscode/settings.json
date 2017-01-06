@@ -1,20 +1,30 @@
 // Place your settings in this file to overwrite the default settings
 {
-  // Controls auto save of dirty files. Accepted values:  
-  //    "off", "afterDelay", 
-  //    "onFocusChange" (editor loses focus), 
-  //    "onWindowChange" (window loses focus). 
-  //    If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
-  "files.autoSave": "onFocusChange",
-    
+    // Controls auto save of dirty files. Accepted values:  
+    //    "off", "afterDelay", 
+    //    "onFocusChange" (editor loses focus), 
+    //    "onWindowChange" (window loses focus). 
+    //    If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "onFocusChange",
+
+
+    // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+    "files.associations": {
+        "*.PublishSettings": "xml"
+    },
+
     // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
     "search.exclude": {
-		"**/.git": true,
-		"**/.idea": true,
-		"**/.serve": true,
-		"**/dist": true,
-		"**/node_modules": true,
-		"**/bower_components": true
-	}
+        "**/.git": true,
+        "**/.idea": true,
+        "**/.serve": true,
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+
+    // Controls if the editor should automatically format the line after typing
+    "editor.formatOnType": false
+
 
 }
